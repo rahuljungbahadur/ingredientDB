@@ -1,0 +1,7 @@
+docker run \
+--name=ingredientdb \
+--user shiny \
+--mount type=bind,source=E:/ingredientDB/awsFiles,target=/srv/shiny-server/inputFiles,bind-propagation=shared \
+--rm -p 80:3838 \
+-d rahuljungbahadur/ingredientdb:2.0
+
